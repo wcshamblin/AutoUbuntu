@@ -1,5 +1,6 @@
 #!/bin/sh
 DIR=`dirname "$0"`
+sudo apt-get install net-tools -y
 sudo apt-get install vim -y
 sudo apt-get install zsh -y
 sudo apt-get install curl -y
