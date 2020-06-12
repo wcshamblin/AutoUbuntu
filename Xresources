@@ -16,15 +16,15 @@ Xft.hintstyle:              hintslight
 !-------------------------------------------------------------------------------
 
 URxvt.depth:                32
-URxvt*background: rgba:0000/0000/0000/dddd
-URxvt.geometry:             90x30
+! URxvt*background: rgba:0000/0000/0000/dddd
 URxvt.transparent:          true
 URxvt.fading:               30
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
 URxvt.saveLines:            50
-URxvt.internalBorder:       3
+URxvt.internalBorder:       0
+URxvt.borderColor:          #fdf6e3
 URxvt.lineSpace:            0
 
 ! Fonts
@@ -41,7 +41,7 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,matcher
+URxvt.perl-ext-common:      default,matcher,config-reload
 URxvt.matcher.button:       1
 URxvt.urlLauncher:          firefox
 
@@ -55,34 +55,43 @@ URxvt.cursorBlink:          true
 *pointerColorBackground: #586e75
 *pointerColorForeground: #93a1a1
 
-!! black dark/light
-*color0: #073642
-*color8: #002b36
 
-!! red dark/light
-*color1: #dc322f
-*color9: #cb4b16
 
-!! green dark/light
-*color2: #859900
-*color10: #586e75
 
-!! yellow dark/light
-*color3: #b58900
-*color11: #657b83
 
-!! blue dark/light
-*color4: #268bd2
-*color12: #839496
+! special
+*.foreground:   #586e75
+*.background:   #fdf6e3
+*.cursorColor:  #586e75
 
-!! magenta dark/light
-*color5: #d33682
-*color13: #6c71c4
+! black
+*.color0:       #002b36
+*.color8:       #9fc2cf
 
-!! cyan dark/light
-*color6: #2aa198
-*color14: #93a1a1
+! red
+*.color1:       #dc322f
+*.color9:       #dc322f
 
-!! white dark/light
-*color7: #eee8d5
-*color15: #fdf6e3
+! green
+*.color2:       #859900
+*.color10:      #859900
+
+! yellow
+*.color3:       #b58900
+*.color11:      #b58900
+
+! blue
+*.color4:       #268bd2
+*.color12:      #268bd2
+
+! magenta
+*.color5:       #6c71c4
+*.color13:      #6c71c4
+
+! cyan
+*.color6:       #2aa198
+*.color14:      #2aa198
+
+! white
+*.color7:       #93a1a1
+*.color15:      #93a1a1
