@@ -11,8 +11,8 @@ sudo apt-get install plasma-desktop -y
 sudo apt-get install apt-transport-https -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-mv $DIR/zshrc ~/.zshrc
-mv $DIR/Xresources ~/.Xresources
+mv $DIR/zsh/zshrc ~/.zshrc
+mv $DIR/urxvt/Xresources ~/.Xresources
 mkdir ~/.urxvt/themes/
 mkdir ~/.urxvt/ext/
 mv $DIR/urxvt/themes/* ~/.urxvt/themes/
