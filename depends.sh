@@ -13,6 +13,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 mv $DIR/zshrc ~/.zshrc
 mv $DIR/Xresources ~/.Xresources
 mkdir ~/.urxvt/themes/
+mkdir ~/.urxvt/ext/
 mv $DIR/urxvt/themes/* ~/.urxvt/themes/
 sudo cpan AnyEvent Linux::FD common::sense
-
+mv $DIR/urxvt/config/* ~/.urxvt/ext/
